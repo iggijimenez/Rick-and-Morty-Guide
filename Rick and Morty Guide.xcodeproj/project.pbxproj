@@ -13,7 +13,9 @@
 		A4447ECE2707D2600060B9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4447ECC2707D2600060B9B8 /* Main.storyboard */; };
 		A4447ED02707D2650060B9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4447ECF2707D2650060B9B8 /* Assets.xcassets */; };
 		A4447ED32707D2650060B9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4447ED12707D2650060B9B8 /* LaunchScreen.storyboard */; };
-		A4447EDE2707D3D70060B9B8 /* EpisodesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4447EDD2707D3D70060B9B8 /* EpisodesTableViewController.swift */; };
+		A4447EE52707EFCE0060B9B8 /* EpisodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4447EE42707EFCE0060B9B8 /* EpisodeTableViewController.swift */; };
+		A4447F0D27090D530060B9B8 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4447F0C27090D530060B9B8 /* Episode.swift */; };
+		A4447F0F27090D640060B9B8 /* Episodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4447F0E27090D640060B9B8 /* Episodes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		A4447ECF2707D2650060B9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4447ED22707D2650060B9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4447ED42707D2650060B9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4447EDD2707D3D70060B9B8 /* EpisodesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesTableViewController.swift; sourceTree = "<group>"; };
+		A4447EE42707EFCE0060B9B8 /* EpisodeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewController.swift; sourceTree = "<group>"; };
+		A4447F0C27090D530060B9B8 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		A4447F0E27090D640060B9B8 /* Episodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episodes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		A4447EC52707D2600060B9B8 /* Rick and Morty Guide */ = {
 			isa = PBXGroup;
 			children = (
+				A4447EDF2707ECEE0060B9B8 /* Models */,
 				A4447EDC2707D2AA0060B9B8 /* Recources */,
 				A4447EDB2707D2910060B9B8 /* Controllers */,
 				A4447EDA2707D2830060B9B8 /* Views */,
@@ -79,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A4447ECA2707D2600060B9B8 /* ViewController.swift */,
-				A4447EDD2707D3D70060B9B8 /* EpisodesTableViewController.swift */,
+				A4447EE42707EFCE0060B9B8 /* EpisodeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -92,6 +97,15 @@
 				A4447EC82707D2600060B9B8 /* SceneDelegate.swift */,
 			);
 			path = Recources;
+			sourceTree = "<group>";
+		};
+		A4447EDF2707ECEE0060B9B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4447F0C27090D530060B9B8 /* Episode.swift */,
+				A4447F0E27090D640060B9B8 /* Episodes.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4447ECB2707D2600060B9B8 /* ViewController.swift in Sources */,
-				A4447EDE2707D3D70060B9B8 /* EpisodesTableViewController.swift in Sources */,
+				A4447F0D27090D530060B9B8 /* Episode.swift in Sources */,
+				A4447EE52707EFCE0060B9B8 /* EpisodeTableViewController.swift in Sources */,
+				A4447F0F27090D640060B9B8 /* Episodes.swift in Sources */,
 				A4447EC72707D2600060B9B8 /* AppDelegate.swift in Sources */,
 				A4447EC92707D2600060B9B8 /* SceneDelegate.swift in Sources */,
 			);

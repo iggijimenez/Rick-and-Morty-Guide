@@ -11,25 +11,40 @@
         <!--Episodes-->
         <scene sceneID="8BZ-s9-Zcc">
             <objects>
-                <tableViewController id="RCF-cp-aT9" customClass="EpisodesTableViewController" customModule="Rick_and_Morty_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RCF-cp-aT9" customClass="EpisodeTableViewController" customModule="Rick_and_Morty_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="F5M-aX-EId">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="episodeCell" id="qDr-wY-m0x">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="episodeCell" rowHeight="257" id="qDr-wY-m0x">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="257"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qDr-wY-m0x" id="zlK-EH-YjL">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fai-ZO-wg8">
+                                            <rect key="frame" x="306" y="106" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uKS-7m-ocq">
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="257"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uKS-7m-ocq" firstAttribute="top" secondItem="zlK-EH-YjL" secondAttribute="top" id="b70-qe-hML"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Fai-ZO-wg8" secondAttribute="trailing" constant="46" id="dgC-8c-Wfv"/>
+                                        <constraint firstItem="Fai-ZO-wg8" firstAttribute="leading" secondItem="uKS-7m-ocq" secondAttribute="trailing" constant="46" id="eKx-wB-4Jk"/>
+                                        <constraint firstAttribute="bottom" secondItem="uKS-7m-ocq" secondAttribute="bottom" id="gpZ-9W-p3N"/>
+                                        <constraint firstItem="uKS-7m-ocq" firstAttribute="leading" secondItem="zlK-EH-YjL" secondAttribute="leading" id="nWO-kz-6Td"/>
+                                        <constraint firstItem="Fai-ZO-wg8" firstAttribute="top" secondItem="zlK-EH-YjL" secondAttribute="topMargin" constant="95" id="urO-mC-DWW"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="RCF-cp-aT9" id="7sL-Cn-TAu"/>
-                            <outlet property="delegate" destination="RCF-cp-aT9" id="XUw-Wx-Xfb"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Episodes" id="ICt-NW-WcB"/>
                     <connections>
@@ -38,7 +53,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsG-nX-BM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595" y="133"/>
+            <point key="canvasLocation" x="594.20289855072474" y="132.58928571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zHp-2h-rrt">
