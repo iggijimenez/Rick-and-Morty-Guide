@@ -37,22 +37,21 @@ class EpisodeTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "episodeCell", for: indexPath)
-    
-    let episode = episodes[indexPath.row]
-    
-    cell.textLabel?.text = episode.name
-
-    
-    return cell
+    if let cell = tableView.dequeueReusableCell(withIdentifier: "episodeCell", for: indexPath) as? EpisodeTableViewCell {
+      
+      
+      let episode = episodes[indexPath.row]
+      
+      cell.episodeLabel.text = episode.name
+      
+      
+      return cell
+    }
+    return UITableViewCell()
   }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    performSegue(withIdentifier: "episodeSegue", sender: nil)
+  }
+  
 }
-
-//extension Data {
-//    func parseData(removeString string: String) -> Data? {
-//        let dataAsString = String(data: self, encoding: .utf8)
-//        let parsedDataString = dataAsString?.replacingOccurrences(of: string, with: "")
-//        guard let data = parsedDataString?.data(using: .utf8) else { return nil}
-//        return data
-//    }
-//}
