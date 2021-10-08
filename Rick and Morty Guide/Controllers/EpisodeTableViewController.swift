@@ -42,9 +42,7 @@ class EpisodeTableViewController: UITableViewController {
       
       let episode = episodes[indexPath.row]
       
-      cell.episodeLabel.text = episode.name
-      
-      
+      cell.episodeLabel.text = episode.name  
       return cell
     }
     return UITableViewCell()

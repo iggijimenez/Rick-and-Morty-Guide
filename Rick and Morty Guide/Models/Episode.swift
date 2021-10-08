@@ -8,5 +8,5 @@
 import Foundation
 
 struct Episode: Codable {
-    var name: String
+  var name: String
 }

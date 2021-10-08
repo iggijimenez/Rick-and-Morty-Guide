@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RIck and Morty Guide-->
+        <!--Rick and Morty Guide-->
         <scene sceneID="8BZ-s9-Zcc">
             <objects>
                 <tableViewController id="RCF-cp-aT9" customClass="EpisodeTableViewController" customModule="Rick_and_Morty_Guide" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="RIck and Morty Guide" id="ICt-NW-WcB">
+                    <navigationItem key="navigationItem" title="Rick and Morty Guide" id="ICt-NW-WcB">
                         <barButtonItem key="backBarButtonItem" title="Back" id="sRE-zP-22h"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="rectangle.fill.on.rectangle.fill" catalog="system" id="Hqa-35-Yfr"/>
                     </navigationItem>
