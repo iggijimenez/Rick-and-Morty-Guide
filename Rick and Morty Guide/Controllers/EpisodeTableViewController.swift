@@ -49,7 +49,21 @@ class EpisodeTableViewController: UITableViewController {
   }
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    performSegue(withIdentifier: "episodeSegue", sender: nil)
+    performSegue(withIdentifier: "episodeSegue", sender: indexPath)
   }
-  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    switch segue.identifier{
+    case "episodeSegue":
+      guard var destination = segue.destination as? CharactersTableViewController else {
+        fatalError("fatal error something wrong in the storyboard")
+      }
+      guard let indexPath = sender as? IndexPath else {
+        fatalError("sender expecting index path")
+      }
+      let episode = episodes[indexPath.row]
+      destination.currentEpisode = episode
+    default:
+      break
+    }
+  }
 }
