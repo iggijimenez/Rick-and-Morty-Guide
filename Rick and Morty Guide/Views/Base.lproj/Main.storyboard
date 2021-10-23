@@ -48,7 +48,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="episodeImage" destination="UHs-Gs-Kj3" id="fgM-js-kvW"/>
-                                    <outlet property="episodeLabel" destination="Fhu-n1-Pas" id="ra7-Ht-U6I"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -14,7 +14,6 @@ class CharactersTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-//    print(currentEpisode)
     
     fetchCharacters(urls: currentEpisode.characters.compactMap({URL(string: $0)})) { fetchedCharacters in
       self.characters = fetchedCharacters
