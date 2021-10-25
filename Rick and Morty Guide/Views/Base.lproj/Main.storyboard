@@ -30,8 +30,9 @@
                                                 <constraint firstAttribute="height" constant="195" id="uL2-8D-RLW"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhu-n1-Pas">
-                                            <rect key="frame" x="205.5" y="71.5" width="161.5" height="41"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zed-oI-bnt">
+                                            <rect key="frame" x="268" y="87" width="42" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -39,9 +40,6 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="UHs-Gs-Kj3" secondAttribute="bottom" id="0wW-fl-Vij"/>
-                                        <constraint firstItem="Fhu-n1-Pas" firstAttribute="leading" secondItem="UHs-Gs-Kj3" secondAttribute="trailing" constant="40" id="9Hu-ir-SaS"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="Fhu-n1-Pas" secondAttribute="trailing" constant="27" id="WTM-3d-zSz"/>
-                                        <constraint firstAttribute="bottom" secondItem="Fhu-n1-Pas" secondAttribute="bottom" constant="82.5" id="i8V-rN-YSu"/>
                                         <constraint firstItem="UHs-Gs-Kj3" firstAttribute="leading" secondItem="zlK-EH-YjL" secondAttribute="leading" id="nf8-Rb-zJF"/>
                                         <constraint firstItem="UHs-Gs-Kj3" firstAttribute="top" secondItem="zlK-EH-YjL" secondAttribute="top" id="oqt-XX-ZEr"/>
                                     </constraints>
@@ -57,6 +55,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="rectangle.fill.on.rectangle.fill" catalog="system" id="Hqa-35-Yfr"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="episodeLabel" destination="Zed-oI-bnt" id="Ljo-9l-LzK"/>
                         <segue destination="f9f-zx-qvd" kind="show" identifier="episodeSegue" id="zbn-Hf-3Nn"/>
                     </connections>
                 </tableViewController>
