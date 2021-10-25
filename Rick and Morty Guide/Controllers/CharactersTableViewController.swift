@@ -12,6 +12,7 @@ class CharactersTableViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+//    print(currentEpisode)
     
     let urlString = "https://rickandmortyapi.com/api/episode"
     
