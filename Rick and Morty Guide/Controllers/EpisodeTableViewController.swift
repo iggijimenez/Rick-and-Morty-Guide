@@ -59,7 +59,7 @@ class EpisodeTableViewController: UITableViewController {
             let episode = episodes[indexPath.row]
             
             //MARK: CALL THIS
-            cell.episodeLabel.text = characters
+//            cell.episodeLabel.text = characters
             return cell
         }
         return UITableViewCell()
@@ -78,7 +78,7 @@ class EpisodeTableViewController: UITableViewController {
                 fatalError("sender expecting index path")
             }
             let episode = episodes[indexPath.row]
-            destination.currentEpisode = episode
+//            destination.currentEpisode = episode
         default:
             break
         }
